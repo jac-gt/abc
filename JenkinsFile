@@ -6,6 +6,8 @@ pipeline {
       steps {
         echo 'Hello World again from feature/US123'
         echo 'Branch is ${params.GIT_BRANCH} and source id is ${params.SOURCE_ID_NAME}'
+        
+        echo 'Hello World - end'
       }
     }
   }
