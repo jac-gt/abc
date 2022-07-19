@@ -1,13 +1,11 @@
 pipeline {
   agent any
   
-  parameters { string(name: 'GIT_BRANCH', defaultValue: 'master', description: 'branch to build') }
-  
   stages {
     stage("build"){
       steps {
         echo 'Hello World from feature/US123'
-        echo '$GIT_BRANCH from feature/US123'
+        echo 'Branch is ${params.GIT_BRANCH} and source id is ${params.SOURCE_ID}'
       }
     }
   }
