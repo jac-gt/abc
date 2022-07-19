@@ -6,8 +6,8 @@ pipeline {
   stages {
     stage("build"){
       steps {
-        echo 'Hello World from feature/US123'
-        echo $GIT_BRANCH
+        echo 'Hello World from master'
+        echo ${GIT_BRANCH}
       }
     }
   }
